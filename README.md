@@ -16,4 +16,5 @@ python ./defense/grad-prune.py --result_file badnet_0_1 --yaml_path ../config/de
 # Modification Attacks
 The attacks have been modified to create a complete copy of the training data with the backdoor trigger added. This is saved to a variable called "bd_train_dataset_all." This variable then needs to be added to the "save_attack_result" function call at the end of the attack method. This will ensure that Grad-Prune has access a backdoor copy of all training samples when sampling.
 
+# !!! IMPORTANT !!!
 NOTE: This repository is NOT self-contained. Moreover, only the BadNet, Blended, LF and BPP attacks have been modified to be compatible with Grad-Prune. 
