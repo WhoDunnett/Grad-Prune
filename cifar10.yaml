@@ -1,0 +1,24 @@
+device: 'cuda'
+amp: True
+pin_memory: True
+non_blocking: True
+prefetch: False
+num_workers: 0
+
+dataset: 'cifar10'
+dataset_path: './data'
+spc: 100
+random_seed: 0
+
+accuracy_threshold: 0.1
+val_ratio: 0.1
+pruning_patience: 10
+tuning_patience: 10
+batch_size: 128
+
+lr: 0.001
+client_optimizer: sgd
+sgd_momentum: 0.9
+wd: 0.0005
+lr_scheduler: None
+model: 'preactresnet18'
