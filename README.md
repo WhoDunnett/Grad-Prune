@@ -1,5 +1,5 @@
 # Grad-Prune
-This is the code required to implement and benchmark the Grad-Prune paper proposed in XXXXXXXXXXXXXXXXXXXX (replace with a link when published). Importantly, this repository contains all of the scripts that are required to modify BackdoorBench (https://github.com/SCLBD/BackdoorBench/tree/main) to reproduce our results.
+This is the code required to implement and benchmark the Grad-Prune paper proposed in https://arxiv.org/abs/2405.03918. Importantly, this repository contains all of the scripts that are required to modify BackdoorBench (https://github.com/SCLBD/BackdoorBench/tree/main) to reproduce our results.
 
 To get the repository to work, please download the BackdoorBench repository and then replace the files in the attack and utils folder with the provided files. Then add grad-prune.py file to the defence folder. Below we have provided an example of how to train a BadNet model using CIFAR-10 and then use Grad-Prune to remove the backdoor.
 
